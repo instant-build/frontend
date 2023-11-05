@@ -3,7 +3,9 @@ pipeline {
 
     stages {
         stage('Clean') {
-          cleanWs()
+            steps {
+                cleanWs()
+            }
         }
 
         stage('Checkout') {
