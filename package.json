@@ -1,5 +1,5 @@
 {
-  "name": "instant-build",
+  "name": "instant.build",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
