@@ -1,11 +1,9 @@
 pipeline {
-    agent any
-
-//     environment {
-//         PATH = "${tool 'NodeJS'}/bin😒{tool 'AngularCLI'}/bin😒{env.PATH}"
-//     }
-
     stages {
+        stage('Clean') {
+          cleanWs()
+        }
+
         stage('Checkout') {
             steps {
                 git 'https://github.com/instant-build/instant.build-angular.git'
